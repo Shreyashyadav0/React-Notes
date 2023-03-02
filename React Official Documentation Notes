@@ -1,0 +1,26 @@
+React Notes
+React is a declarative, efficient, and flexible JavaScript library for building user interfaces. It lets you compose complex UIs from small and isolated pieces of code called “components”.
+
+padhai ke alawa laptap pe kuch aur nhi hoga ajj se sun rhe ho?'
+hello from the outside 
+
+
+Components and Props
+Components let you split the UI into independent, reusable pieces, and think about each piece in isolation. This page provides an introduction to the idea of components. You can find a detailed component API reference here.
+
+Conceptually, components are like JavaScript functions. They accept arbitrary inputs (called “props”) and return React elements describing what should appear on the screen.
+
+
+The simplest way to define a component is to write a JavaScript function:
+function Components(props){
+return <h1>Hello, {props.name}</h1>;	
+}
+
+fuction Welcome(props){
+return <h1> Hello, {props.name}</h1>;
+}
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+const element = <Welcome name = "Sara"/>;
+root.render(element);
+Note:Always start component names with a capital letter.
